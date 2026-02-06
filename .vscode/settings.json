@@ -1,0 +1,18 @@
+// For this tasks.json file to be picked up, the "VSCode workspace" must be the
+// root directory. This is done with "File > Open Folder".
+// If you use a "multi-root workspace" then it won't be picked up. That is done
+// with "File > Add Folder to Workspace". You will then have a dedicated
+// ....code-worskpace file, which needs to contain those settings. Note that
+// they will then apply to all "folders" and not just to the current one.
+{
+    "rust-analyzer.check.overrideCommand": [
+        "bazel",
+        "build",
+        "//...",
+        "--@rules_rust//:error_format=json",
+        // This config assumes that
+        // --@rules_rust//rust/settings:rustc_output_diagnostics=true, which is the default.
+        // If you want clippy outputs as well, you can set
+        // --@rules_rust//rust/settings:clippy_output_diagnostics=true.
+    ]
+}

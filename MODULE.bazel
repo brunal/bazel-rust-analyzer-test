@@ -1,0 +1,11 @@
+module(
+    name = "bazel-rust-analyzer-test",
+    version = "1.0.0",
+)
+
+bazel_dep(name = "rules_rust", version = "0.68.1")
+
+rust = use_extension("@rules_rust//rust:extensions.bzl", "rust")
+rust.toolchain(edition = "2021")
+use_repo(rust, "rust_toolchains")
+register_toolchains("@rust_toolchains//:all")
