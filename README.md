@@ -15,4 +15,4 @@ For rust-analyer setup, 2 files are important, located in .vscode:
 
 Here's a capture of the "lingering diagnostic" issue:
 
-<video src="vscode-rust-analyzer-diagnostic-lingering.webm" controls width="600">The video doesn't seem to work!</video>
+[vscode-rust-analyzer-diagnostic-lingering.webm](https://github.com/user-attachments/assets/df508592-0721-4b70-a911-b9269ea4aa45)
