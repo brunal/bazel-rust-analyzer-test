@@ -15,5 +15,5 @@ For rust-analyer setup, 2 files are important, located in .vscode:
 
 Here's a capture of the "lingering diagnostic" issue:
 
-![Demo](vscode-rust-analyzer-diagnostic-lingering.webm)
+[[vscode-rust-analyzer-diagnostic-lingering.webm]]
 
